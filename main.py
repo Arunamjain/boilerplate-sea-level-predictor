@@ -1,9 +1,7 @@
-# This entrypoint file to be used in development. Start by reading README.md
 import sea_level_predictor
-from unittest import main
+import unittest
+import test_module
 
-# Test your function by calling it here
+unittest.main(module='test_module', exit=False, verbosity=2)
+
 sea_level_predictor.draw_plot()
-
-# Run unit tests automatically
-main(module='test_module', exit=False)
